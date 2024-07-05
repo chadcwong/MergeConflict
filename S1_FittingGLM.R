@@ -15,7 +15,7 @@
 ## Loading packages and reading .XLSX files ====================================
 pacman::p_load(tidyverse, readxl, foreach, data.table)
 
-setwd("C:/Users/cwong/OneDrive - LGL Limited/CPUD_Chinook_2023/R Code")
+setwd("C:/Users/Chad/OneDrive - LGL Limited/CPUD_Chinook_2023/R Code")
 
 # Loading in Excel file ########################################################
 # 2020 RST File ===============================================================
@@ -24,7 +24,7 @@ datapath <- "./2024 Updates/Local Data Copy/21May2024/Sarita_RST/"
 time_20 <- 
   read_xlsx(
     path=paste0(datapath, "RST_2020.xlsx"), 
-    sheet = "RSTEnvironment",
+    sheet = "RST_Environmental",
     range = "E1:F79",
     col_types = c("date", "date")
   )
